@@ -1,0 +1,82 @@
+
+     /* i  have  commmented all  the   major  things   for   you  to  understand  the  styling */
+
+
+/* Overall calculator styling */
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Adjust width as desired */
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px; /* Increased corner radius for a softer look */
+  background: linear-gradient(to bottom, #f1f1f1, #e6e6e6); /* Subtle gradient */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  font-family: sans-serif;
+}
+
+/* Input field styling */
+.input {
+  height: 60px;
+  font-size: 28px; /* Increased font size for improved readability */
+  text-align: right;
+  border: none;
+  padding: 0 20px; /* Increased padding for cleaner aesthetics */
+  background-color: #f5f5f5; /* Lighter background for better contrast */
+  border-bottom: 2px solid #ddd; /* Emphasize the input field */
+}
+
+/* Keypad styling */
+.keypad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px; /* Increased spacing for visual hierarchy */
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  margin-bottom: 8px; /* Consistent spacing between rows */
+}
+
+/* Button styling */
+button {
+  width: 70px; /* Increased button size for better touch targets */
+  height: 70px; /* Match button width for a balanced look */
+  font-size: 24px; /* Larger font size for improved legibility */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Specific button styling */
+#equals, #clear {
+  background-color: #1976d2; /* Vibrant blue for primary buttons */
+}
+
+#equals:hover, #clear:hover {
+  background-color: #12569e; /* Darker blue on hover for feedback */
+}
+
+button:hover {
+  background-color: #ddd; /* Light gray on hover for other buttons */
+}
+
+#backspace {
+  font-size: 20px; /* Consistent font size for backspace icon */
+}
+
+/* Responsive design (optional) */
+@media only screen and (max-width: 480px) {
+  .calculator {
+    width: 90vw;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
